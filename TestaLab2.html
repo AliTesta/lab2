@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>TestaLab2</title>
+<link rel="stylesheet" href="styleLab2.css">
+</head>
+<body>
+
+<h1>Summer Session 1 Schedule</h1>
+<h3>Definitions:</h3>
+<p>Table: They are made by using the tags &lt;table&gt; &lt;/table&gt; with &lt;tr&gt; &lt;/tr&gt; pairs nested inside for each row. Additionally, there are &lt;td&gt; &lt;/td&gt; pairs nested in the &lt;tr&gt; &lt;/tr&gt; pairs to distinguish cells/columns. However, in the first &lt;tr&gt; &lt;/tr&gt; pair, &lt;th&gt; &lt;/th&gt; pairs would be used instead inside to create header cells. You can also use &lt;thead&gt; &lt;/thead&gt; tags to create the header of a table and &lt;tfoot&gt; &lt;/tfoot&gt; tags to create the footer.&lt;caption&gt; &lt;/caption&gt; allows to the coder to place a caption at the top on the table.</p>
+<p>Colspan vs Rowspan: colspan is used to combine cells across columns. This means that a cell would be expanding horizantally. rowspan is used to combine cells across rows. This means that a cell would be expanding vertically.</p>
+<p>Cell spacing vs Padding: Cell spacing determines the space in between indiviual cells. A table with large cell spacing, would have gaps between the squares of each cell on all sides. Padding is the space between the content of a cell and the edge of a cell. A table with large padding would still have the cells touching but the blank space within the cell would be large. </p>
+<p>Defining Table Borders using CSS: When styling a table to have borders in CSS, curly brackets, the term border, and the desired border size are used. An example is "table { border: 1px;}". This CSS code is then linked to the head of the html file where the table is. The width of the border is controlled by changing the numerical pixal input to a desired size.</p>
+<table border="1">
+<caption>Summer Schedule</caption>
+<tr><th>Time</th><th>Monday</th><th>Tuesday</th><th>Wednesday</th><th>Thursday</th><th>Friday</th><th>Saturday</th><th>Sunday</th></tr>
+<tr><td>8:00-9:00</td><td> </td><td rowspan="3"><a href="https://revelle.ucsd.edu/humanities/">HUM 5-LE</a></td><td> </td><td rowspan="3"><a href="https://revelle.ucsd.edu/humanities/">HUM 5-LE</a></td><td> </td><td> </td><td rowspan="2"><image src="images/walking.jpg" alt="people walking" width="100" height="60"></image></td></tr>
+<tr><td>9:00-10:00</td><td> </td><td> </td><td> </td><td> </td></tr>
+<tr><td>10:00-11:00</td><td> </td><td> </td><td rowspan="2"><image src="Images/rollerskates.jpg" alt="roller skates" width="96" height="54"></td><td> </td><td> </td></tr>
+<tr><td>11:00-12:00</td><td rowspan="3"><a href="https://pages.ucsd.edu/~mboyle/COGS3/index.html">COGS 3-LE</a></td><td>HUM 5-DI</td><td rowspan="3"><a href="https://pages.ucsd.edu/~mboyle/COGS3/index.html">COGS 3-LE</a></td><td>HUM 5-DI</td><td> </td><td> </td></tr>
+<tr><td>12:00-1:00</td><td> </td><td> </td><td> </td><td> </td><td></td></tr>
+<tr><td>1:00-2:00</td><td> </td><td> </td><td> </td><td> </td><td></td></tr>
+<tr><td>2:00-3:00</td><td>COGS 3-DI</td><td> </td><td>COGS 3-DI</td><td> </td><td> </td><td rowspan="2"><image src="images/swimming.jpg" alt="people in a swimming pool" width="99" height="66"></image></td><td rowspan="2"><image src="images/swimming.jpg" alt="people in a swimming pool" width="99" height="66"></image></td></tr>
+<tr><td>3:00-4:00</td><td> </td><td> </td><td> </td><td> </td><td> </td></tr>
+</table>
+
+</body>
+</html>
